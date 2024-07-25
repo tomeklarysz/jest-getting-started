@@ -27,3 +27,10 @@ test('dividing', () => {
     expect(Calculator.divide(t[0], t[1])).toBeGreaterThan(t[0] / t[1] - 1);
   })
 })
+
+test('multiplying', () => {
+  testCases.forEach((t) => {
+    expect(Calculator.multiply(t[0], t[1])).toEqual(t[0] * t[1]);
+    expect(Calculator.multiply(t[0], t[1])).toBeGreaterThan(t[0] * t[1] - 1);
+  })
+})
